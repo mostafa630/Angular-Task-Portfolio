@@ -2,10 +2,7 @@
   padding-bottom: var(--spacing-lg);
   border-bottom: 1px solid #e0e0e0;
   
-  &:last-child {
-    border-bottom: none;
-  }
-  
+
   &-title {
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
@@ -36,7 +33,7 @@
   
   &-description {
     color: var(--dark);
-    font-size: var(--font-size-base);
+    //font-size: var(--font-size-base);
     line-height: var(--line-height-relaxed);
     margin: 0;
   }

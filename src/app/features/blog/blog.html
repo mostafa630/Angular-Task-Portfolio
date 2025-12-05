@@ -1,0 +1,14 @@
+<div class="blog">
+  <h1 class="blog-title">Blog</h1>
+  
+  <div class="blog-list">
+    @for (blog of Blogs; track blog.id) {
+      <app-blog-card
+        [title]="blog.title"
+        [date]="blog.date"
+        [tags]="blog.tags"
+        [description]="blog.description"
+      />
+    }
+  </div>
+</div>
