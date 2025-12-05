@@ -38,12 +38,12 @@
   <section class="featured-works">
     <h2 class="section-title">Featured works</h2>
     <div class="works-list">
-      @for (work of featuredWorks; track work.id) {
+      @for (work of featuredWorks.slice(0, 3); track work.id) {
         <app-work-card
           [image]="work.image"
           [title]="work.title"
           [year]="work.year"
-          [category]="work.category"
+          [tags]="work.tags"
           [description]="work.description"
         />
       }

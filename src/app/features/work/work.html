@@ -1,0 +1,15 @@
+<div class="work">
+  <h1 class="work-title">Work</h1>
+  
+  <div class="work-list">
+        @for (work of featuredWorks; track work.id) {
+        <app-work-card
+          [image]="work.image"
+          [title]="work.title"
+          [year]="work.year"
+          [tags]="work.tags"
+          [description]="work.description"
+        />
+      }
+  </div>
+</div>

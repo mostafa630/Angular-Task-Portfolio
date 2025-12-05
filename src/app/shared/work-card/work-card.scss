@@ -48,9 +48,12 @@
     font-weight: var(--font-weight-black);
   }
   
-  &-category {
+  // &-category {
+  //   color: var(--light);
+  //   font-size: var(--font-size-xl);
+  // }
+  &-tags {
     color: var(--light);
-    font-size: var(--font-size-xl);
   }
   
   &-description {

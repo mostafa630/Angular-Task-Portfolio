@@ -11,6 +11,6 @@ export class WorkCard {
   @Input() image: string = '';
   @Input() title: string = '';
   @Input() year: string = '';
-  @Input() category: string = '';
+  @Input() tags: string[] = [];
   @Input() description: string = '';
 }
