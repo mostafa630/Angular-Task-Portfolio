@@ -1,0 +1,18 @@
+<footer class="footer">
+  <div class="container">
+    <div class="social-links">
+      @for (social of socialLinks; track social.name) {
+        <a 
+          [href]="social.url" 
+          [attr.aria-label]="social.name"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+        >
+          <img [src]="social.icon" [alt]="social.name" />
+        </a>
+      }
+    </div>
+    <p class="copyright">Copyright ©2020 All rights reserved</p>
+  </div>
+</footer>

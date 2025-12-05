@@ -1,7 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 @use "./_tokens/_index";
-.page {
-  background-color: green;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--dark);
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 856px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
 }
 
 

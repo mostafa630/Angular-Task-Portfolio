@@ -1,0 +1,122 @@
+.home {
+  padding-bottom: var(--spacing-3xl);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3xl);
+  padding: var(--spacing-2xl) 0;
+  
+  &-content {
+    flex: 1;
+  }
+  
+  &-title {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-black);
+    line-height: var(--line-height-tight);
+    color: var(--dark);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  &-description {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    color: var(--dark);
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  &-image {
+    flex-shrink: 0;
+    width: 243px;
+    height: 243px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: var(--box-shadow-lg);
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.recent-posts {
+  background-color: #edf7fa;
+  padding: var(--spacing-md);
+  margin: 0 calc(-1 * var(--spacing-md));
+  margin-bottom: var(--spacing-xl);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-normal);
+  color: var(--dark);
+  margin: 0;
+}
+
+.view-all {
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: var(--font-size-base);
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.featured-works {
+  padding: var(--spacing-lg) 0;
+  
+  .section-title {
+    margin-bottom: var(--spacing-lg);
+  }
+}
+
+.works-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: var(--spacing-lg);
+    
+    &-title {
+      font-size: var(--font-size-3xl);
+    }
+    
+    &-image {
+      width: 170px;
+      height: 170px;
+    }
+  }
+  
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+}

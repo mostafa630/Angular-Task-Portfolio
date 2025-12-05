@@ -1,0 +1,15 @@
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      @for (item of navItems; track item.path) {
+        <a 
+          [routerLink]="item.path" 
+          routerLinkActive="nav-link-active"
+          class="nav-link"
+        >
+          {{ item.label }}
+        </a>
+      }
+    </nav>
+  </div>
+</header>

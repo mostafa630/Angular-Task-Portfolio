@@ -1,0 +1,54 @@
+<div class="home">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Hi, I am John,<br />
+        Creative Technologist
+      </h1>
+      <p class="hero-description">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+      </p>
+      <app-button text="Download Resume" variant="primary" size="large" />
+    </div>
+    <div class="hero-image">
+      <img src="assets/images/home/personal_img.png" alt="John - Creative Technologist" />
+    </div>
+  </section>
+
+  <!-- Recent Posts Section -->
+  <section class="recent-posts">
+    <div class="section-header">
+      <h2 class="section-title">Recent posts</h2>
+      <a href="/blog" class="view-all">View all</a>
+    </div>
+    <div class="posts-grid">
+      @for (post of recentPosts; track post.id) {
+        <app-card
+          variant="vertical"
+          [title]="post.title"
+          [date]="post.date"
+          [tags]="post.tags"
+          [description]="post.description"
+        />
+      }
+    </div>
+  </section>
+
+  <!-- Featured Works Section -->
+  <section class="featured-works">
+    <h2 class="section-title">Featured works</h2>
+    <div class="works-list">
+      @for (work of featuredWorks; track work.id) {
+        <app-card
+          variant="horizontal"
+          [image]="work.image"
+          [title]="work.title"
+          [year]="work.year"
+          [category]="work.category"
+          [description]="work.description"
+        />
+      }
+    </div>
+  </section>
+</div>
