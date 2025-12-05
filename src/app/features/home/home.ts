@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { Button } from '../../shared/button/button';
-import { Card } from '../../shared/card/card';
+import { PostCard } from '../../shared/post-card/post-card';
+import { WorkCard } from '../../shared/work-card/work-card';
 import { POSTS } from '../../shared/data/posts.data';
 import { WORKS } from '../../shared/data/works.data';
 
 @Component({
   selector: 'app-home',
-  imports: [Button, Card],
+  imports: [Button, PostCard, WorkCard],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })

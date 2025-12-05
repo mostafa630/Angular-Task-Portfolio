@@ -24,8 +24,7 @@
     </div>
     <div class="posts-grid">
       @for (post of recentPosts; track post.id) {
-        <app-card
-          variant="vertical"
+        <app-post-card
           [title]="post.title"
           [date]="post.date"
           [tags]="post.tags"
@@ -40,8 +39,7 @@
     <h2 class="section-title">Featured works</h2>
     <div class="works-list">
       @for (work of featuredWorks; track work.id) {
-        <app-card
-          variant="horizontal"
+        <app-work-card
           [image]="work.image"
           [title]="work.title"
           [year]="work.year"

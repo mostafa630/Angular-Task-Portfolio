@@ -1,0 +1,15 @@
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-post-card',
+  imports: [CommonModule],
+  templateUrl: './post-card.html',
+  styleUrl: './post-card.scss',
+})
+export class PostCard {
+  @Input() title: string = '';
+  @Input() date: string = '';
+  @Input() tags: string[] = [];
+  @Input() description: string = '';
+}
