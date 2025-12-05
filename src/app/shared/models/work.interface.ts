@@ -5,4 +5,6 @@ export interface Work {
   tags: string[];
   description: string;
   image: string;
+  fullDescription?: string;
+  images?: string[];
 }

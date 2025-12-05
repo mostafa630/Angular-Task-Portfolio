@@ -1,4 +1,4 @@
-<div class="work-card">
+<a [routerLink]="['/works', id]" class="work-card">
   <div class="work-card-image">
     <img [src]="image" [alt]="title" />
   </div>
@@ -12,4 +12,4 @@
     
     <p class="work-card-description">{{ description }}</p>
   </div>
-</div>
+</a>

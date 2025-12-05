@@ -4,6 +4,7 @@
   <div class="work-list">
         @for (work of featuredWorks; track work.id) {
         <app-work-card
+          [id]="work.id"
           [image]="work.image"
           [title]="work.title"
           [year]="work.year"

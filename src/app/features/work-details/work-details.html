@@ -1,0 +1,35 @@
+<div class="work-details">
+  @if (work) {
+    <h1 class="work-details-title">{{ work.title }}</h1>
+    
+    <div class="work-details-meta">
+      <span class="work-details-badge">{{ work.year }}</span>
+      <span class="work-details-tags">{{ work.tags.join(', ') }}</span>
+    </div>
+    
+    <p class="work-details-description">{{ work.fullDescription || work.description }}</p>
+    
+    <!-- Main Image -->
+    <div class="work-details-image">
+      <img [src]="work.image" [alt]="work.title" />
+    </div>
+    
+    <!-- Additional Content Sections -->
+    <section class="work-details-section">
+      <h2 class="work-details-heading">Heading 1</h2>
+      <h3 class="work-details-subheading">Heading 2</h3>
+      <p class="work-details-text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+      </p>
+    </section>
+    
+    <!-- Additional Images -->
+    @if (work.images && work.images.length > 0) {
+      @for (img of work.images; track img) {
+        <div class="work-details-image">
+          <img [src]="img" [alt]="work.title" />
+        </div>
+      }
+    }
+  }
+</div>

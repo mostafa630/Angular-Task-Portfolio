@@ -5,10 +5,11 @@ export const WORKS: Work[] = [
     id: '1',
     title: 'Designing Dashboards',
     year: '2020',
-    tags: ['Dashboard'],
+    tags: ['Dashboard', 'User Experience Design'],
     description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-    image: 'assets/images/home/work_img_1.png'
-    
+    image: 'assets/images/home/work_img_1.png',
+        images : ["assets/images/work-detail/work_detail_img_1.png" , "assets/images/work-detail/work_detail_img_2.png"],
+    fullDescription: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'
   },
   {
     id: '2',
@@ -16,7 +17,9 @@ export const WORKS: Work[] = [
     year: '2018',
     tags: ['Illustration'],
     description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-    image: 'assets/images/home/work_img_2.png'
+    image: 'assets/images/home/work_img_2.png',
+    images : ["assets/images/work-detail/work_detail_img_1.png" , "assets/images/work-detail/work_detail_img_2.png"]
+
   },
   {
     id: '3',
@@ -24,7 +27,9 @@ export const WORKS: Work[] = [
     year: '2018',
     tags: ['Typography'],
     description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-    image: 'assets/images/home/work_img_3.png'
+    image: 'assets/images/home/work_img_3.png',
+    images : ["assets/images/work-detail/work_detail_img_1.png" , "assets/images/work-detail/work_detail_img_2.png"]
+
   },
   {
     id: '4',
@@ -32,6 +37,7 @@ export const WORKS: Work[] = [
     year: '2018',
     tags: ['Components', 'Design'],
     description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-    image: 'assets/images/home/work_img_4.png'
+    image: 'assets/images/home/work_img_4.png',
+    images : ["assets/images/work-detail/work_detail_img_1.png" , "assets/images/work-detail/work_detail_img_2.png"]
   }
 ];
